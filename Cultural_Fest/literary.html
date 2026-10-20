@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Literary Arena — LPU Cultural Fest 2026. Debate, slam poetry, creative writing, quiz, and open mic competitions celebrating the power of words." />
+  <title>Literary Arena — LPU Cultural Fest 2026</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Decorative background blobs -->
+  <div class="bg-blob bg-blob-1" aria-hidden="true"></div>
+  <div class="bg-blob bg-blob-2" aria-hidden="true"></div>
+  <div class="bg-blob bg-blob-3" aria-hidden="true"></div>
+
+  <!-- CSS-only mobile nav toggle (must be sibling of header for ~ selector) -->
+  <input type="checkbox" id="nav-toggle" aria-hidden="true" />
+
+  <!-- ═══════════════════════════════════════
+       HEADER / NAV
+  ═══════════════════════════════════════ -->
+  <header class="site-header" role="banner">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">LPU <span>CULTURAL FEST</span> '26</a>
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu"><span></span><span></span><span></span></label>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a><a href="dance.html">Dance</a><a href="music.html">Music</a>
+        <a href="dramatics.html">Dramatics</a><a href="literary.html" class="active">Literary</a>
+        <a href="finearts.html">Fine Arts</a><a href="gaming.html">Gaming</a>
+        <a href="schedule.html">Schedule</a><a href="register.html" class="nav-cta">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════════
+         SECTION 1 — PAGE HERO
+    ═══════════════════════════════════════ -->
+    <section class="page-hero" aria-labelledby="literary-hero-heading">
+      <div class="container">
+        <div class="hero-badge">✦ Literary Arena</div>
+        <h1 id="literary-hero-heading" class="page-hero-title text-gradient">Literary Arena</h1>
+        <p class="page-hero-sub">Where words become weapons, bridges, and windows — all at once.</p>
+      </div>
+    </section>
+
+    <!-- Arena Story Section -->
+    <section class="arena-story section-pad" aria-labelledby="literary-about-heading">
+      <div class="arena-story-number" aria-hidden="true">04</div>
+      <div class="container">
+        <div class="arena-story-grid">
+          <div class="arena-story-narrative">
+            <span class="arena-story-label">About Literary</span>
+            <h2 id="literary-about-heading" class="arena-story-heading">Words That Stay With You.</h2>
+            <p class="arena-story-desc">The Literary Arena at LPU Cultural Fest 2026 celebrates the written and spoken word in all its power and poetry. Whether you argue with conviction, write with originality, or share a story that matters — this arena is your platform for language in every form.</p>
+            <blockquote class="arena-story-quote">"Ideas become unforgettable when they are shared."</blockquote>
+          </div>
+          <div class="arena-story-features">
+            <div class="arena-feature-card">
+              <div class="arena-feature-icon" aria-hidden="true">💬</div>
+              <div class="arena-feature-text">
+                <h4>Debate &amp; Ideas</h4>
+                <p>Parliamentary format, sharp rebuttals — where logic meets eloquence.</p>
+              </div>
+            </div>
+            <div class="arena-feature-card">
+              <div class="arena-feature-icon" aria-hidden="true">🎤</div>
+              <div class="arena-feature-text">
+                <h4>Poetry &amp; Expression</h4>
+                <p>Slam poetry, open mic, spoken word — raw emotion performed live.</p>
+              </div>
+            </div>
+            <div class="arena-feature-card">
+              <div class="arena-feature-icon" aria-hidden="true">✍️</div>
+              <div class="arena-feature-text">
+                <h4>Creative Writing</h4>
+                <p>Short stories, flash fiction, poetry — imagination shaped into language.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         SECTION 3 — EVENTS
+    ═══════════════════════════════════════ -->
+    <section class="section-pad" id="events" aria-labelledby="literary-events-heading">
+      <div class="container text-center">
+        <span class="section-label">Literary Events</span>
+        <h2 id="literary-events-heading" class="section-title">Literary Competitions</h2>
+        <div class="section-divider"></div>
+
+        <div class="events-grid" style="margin-top:var(--gap-lg); text-align:left;">
+
+          <!-- Event 1: Debate Championship -->
+          <article class="glass-card event-card" aria-labelledby="event-debate-title">
+            <div class="event-card-header">
+              <span class="event-card-icon" aria-hidden="true">💬</span>
+              <h3 class="event-card-title" id="event-debate-title">Debate Championship</h3>
+            </div>
+
+            <div class="event-meta-grid">
+              <div class="event-meta-item">
+                <label>Format</label>
+                <span>Parliamentary debate (team format)</span>
+              </div>
+              <div class="event-meta-item">
+                <label>Team Size</label>
+                <span>2 participants per team</span>
+              </div>
+              <div class="event-meta-item">
+                <label>Duration</label>
+                <span>45–60 minutes per round</span>
+              </div>
+              <div class="event-meta-item">
+                <label>Venue</label>
+                <span>Seminar Hall A</span>
+              </div>
+            </div>
+
+            <div class="event-rules">
+              <h4>Rules &amp; Guidelines</h4>
+              <ul>
+                <li>British parliamentary or Asian parliamentary format followed throughout.</li>
+                <li>Topics announced 15 minutes before each round begins.</li>
+                <li>Teams alternate between proposition and opposition roles.</li>
+                <li>Judged on argumentation quality, rebuttals, and logical structure.</li>
+                <li>Clarity and delivery of speech are key evaluation criteria.</li>
+              </ul>
+            </div>
+
+            <a href="register.html" class="btn btn-primary">Register for Debate →</a>
+          </article>
+
+          <!-- Event 2: Slam Poetry -->
+          <article class="glass-card event-card" aria-labelledby="event-slam-title">
+            <div class="event-card-header">
+              <span class="event-card-icon" aria-hidden="true">🎤</span>
+              <h3 class="event-card-title" id="event-slam-title">Slam Poetry</h3>
+            </div>
+
+            <div class="event-meta-grid">
+              <div class="event-meta-item">
+                <label>Format</label>
+                <span>Individual spoken word performance</span>
+              </div>
+              <div class="event-meta-item">
+                <label>Team Size</label>
+                <span>1 participant</span>
+              </div>
+              <div class="event-meta-item">
+                <label>Duration</label>
+                <span>3–5 minutes</span>
+              </div>
+              <div class="event-meta-item">
+                <label>Venue</label>
+                <span>Campus Courtyard / Open Mic Stage</span>
+              </div>
+            </div>
+
+            <div class="event-rules">
+              <h4>Rules &amp; Guidelines</h4>
+              <ul>
+                <li>Original compositions only — no published or borrowed works.</li>
+                <li>Any language accepted: Hindi, English, or regional languages.</li>
+                <li>No props, instruments, or costumes (minimal use permitted).</li>
+                <li>Poetry must be performed entirely from memory.</li>
+                <li>Judged on content, delivery, originality, emotional impact, and rhythm.</li>
+              </ul>
+            </div>
+
+            <a href="register.html" class="btn btn-primary">Register for Slam Poetry →</a>
+          </article>
+
+          <!-- Event 3: Creative Writing -->
+          <article class="glass-card event-card" aria-labelledby="event-writing-title">
+            <div class="event-card-header">
+              <span class="event-card-icon" aria-hidden="true">✍️</span>
+              <h3 class="event-card-title" id="event-writing-title">Creative Writing</h3>
+            </div>
+
+            <div class="event-meta-grid">
+              <div class="event-meta-item">
+                <label>Format</label>
+                <span>Timed individual writing</span>
+              </div>
+              <div class="event-meta-item">
+                <label>Team Size</label>
+                <span>1 participant</span>
+              </div>
+              <div class="event-meta-item">
+                <label>Duration</label>
+                <span>90 minutes (on-site)</span>
+              </div>
+              <div class="event-meta-item">
+                <label>Venue</label>
+                <span>Seminar Hall B</span>
+              </div>
+            </div>
+
+            <div class="event-rules">
+              <h4>Rules &amp; Guidelines</h4>
+              <ul>
+                <li>Topics provided on the day of the event.</li>
+                <li>Choose one genre at the start: short story, flash fiction, or poetry.</li>
+                <li>Participants must bring their own pens and paper.</li>
+                <li>No electronic devices permitted during the competition.</li>
+                <li>Judged on originality, language, narrative structure, and depth of thought.</li>
+              </ul>
+            </div>
+
+            <a href="register.html" class="btn btn-primary">Register for Creative Writing →</a>
+          </article>
+
+          <!-- Event 4: Quiz League -->
+          <article class="glass-card event-card" aria-labelledby="event-quiz-title">
+            <div class="event-card-header">
+              <span class="event-card-icon" aria-hidden="true">🧠</span>
+              <h3 class="event-card-title" id="event-quiz-title">Quiz League</h3>
+            </div>
+
+            <div class="event-meta-grid">
+              <div class="event-meta-item">
+                <label>Format</label>
+                <span>Team quiz competition</span>
+              </div>
+              <div class="event-meta-item">
+                <label>Team Size</label>
+                <span>2–3 participants</span>
+              </div>
+              <div class="event-meta-item">
+                <label>Duration</label>
+                <span>60–90 minutes per round</span>
+              </div>
+              <div class="event-meta-item">
+                <label>Venue</label>
+                <span>Auditorium</span>
+              </div>
+            </div>
+
+            <div class="event-rules">
+              <h4>Rules &amp; Guidelines</h4>
+              <ul>
+                <li>Multiple rounds covering general knowledge, Indian culture, history, science, literature, and current affairs.</li>
+                <li>Both written and buzzer-based rounds included.</li>
+                <li>No electronic aids or devices permitted.</li>
+                <li>Tie-breaking rounds held as needed.</li>
+                <li>Judged on accuracy and speed of response.</li>
+              </ul>
+            </div>
+
+            <a href="register.html" class="btn btn-primary">Register for Quiz League →</a>
+          </article>
+
+          <!-- Event 5: Open Mic -->
+          <article class="glass-card event-card" aria-labelledby="event-openmic-title">
+            <div class="event-card-header">
+              <span class="event-card-icon" aria-hidden="true">🎙️</span>
+              <h3 class="event-card-title" id="event-openmic-title">Open Mic</h3>
+            </div>
+
+            <div class="event-meta-grid">
+              <div class="event-meta-item">
+                <label>Format</label>
+                <span>Individual or duo open performance</span>
+              </div>
+              <div class="event-meta-item">
+                <label>Team Size</label>
+                <span>1–2 participants</span>
+              </div>
+              <div class="event-meta-item">
+                <label>Duration</label>
+                <span>3–5 minutes</span>
+              </div>
+              <div class="event-meta-item">
+                <label>Venue</label>
+                <span>Campus Courtyard Stage</span>
+              </div>
+            </div>
+
+            <div class="event-rules">
+              <h4>Rules &amp; Guidelines</h4>
+              <ul>
+                <li>Any form of spoken word content — poetry, storytelling, personal essay, comedy, or commentary.</li>
+                <li>Any language is welcome and encouraged.</li>
+                <li>Content must be respectful and non-offensive to all audiences.</li>
+                <li>No competitive judging — purely a celebration of voice and expression.</li>
+                <li>Sign-ups available on the day of the event at the venue.</li>
+              </ul>
+            </div>
+
+            <a href="register.html" class="btn btn-primary">Sign Up for Open Mic →</a>
+          </article>
+
+        </div><!-- /.events-grid -->
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         SECTION 4 — REGISTRATION CTA
+    ═══════════════════════════════════════ -->
+    <section class="section-pad--sm" aria-labelledby="literary-cta-heading">
+      <div class="container">
+        <div class="glass-card cta-banner">
+          <span class="section-label">Ready to Perform?</span>
+          <h2 id="literary-cta-heading" style="font-size:clamp(1.6rem,4vw,2.6rem); margin-bottom:1rem;">
+            Register for <span class="text-gradient">Literary Events</span>
+          </h2>
+          <p style="color:var(--clr-white-70); max-width:520px; margin-inline:auto; margin-bottom:1.5rem;">
+            Step up to the mic, put pen to paper, or take the floor of debate. Your words have
+            the power to move, challenge, and inspire — come show us what you've got.
+          </p>
+          <a href="register.html" class="btn btn-primary" style="font-size:1rem; padding:0.9rem 2.5rem;">
+            Register for Literary Events →
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <h3><span class="text-gradient">LPU Cultural Fest</span> '26</h3>
+          <p>
+            A student-created project celebrating the spirit of campus culture.
+            Inspired by LPU's Spectra and One India cultural events.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Arenas</h4>
+          <ul>
+            <li><a href="dance.html">Dance</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="dramatics.html">Dramatics</a></li>
+            <li><a href="literary.html">Literary</a></li>
+            <li><a href="finearts.html">Fine Arts</a></li>
+            <li><a href="gaming.html">Gaming &amp; Coding</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="index.html#about">About the Fest</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+            <li><a href="index.html#arenas">Creative Arenas</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-sources">
+        <h4>Festival Inspiration — Official LPU References</h4>
+        <ul>
+          <li>
+            <a href="https://www.lpu.in/campus-life/art-and-culture.php"
+               target="_blank" rel="noopener noreferrer">
+              1. LPU Art &amp; Culture — lpu.in/campus-life/art-and-culture.php
+            </a>
+          </li>
+          <li>
+            <a href="https://happenings.lpu.in/lpus-three-day-mega-cultural-fest-spectra-kick-started-at-the-campus/"
+               target="_blank" rel="noopener noreferrer">
+              2. LPU's Three-Day Mega Cultural Fest Spectra — happenings.lpu.in
+            </a>
+          </li>
+          <li>
+            <a href="https://happenings.lpu.in/magnificent-display-of-indian-culture-at-lpus-annual-one-india-2024-cultural-fest/"
+               target="_blank" rel="noopener noreferrer">
+              3. One India 2024 Cultural Fest — happenings.lpu.in
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 LPU Cultural Fest — Student Project. Not an official LPU portal.</p>
+        <p>Built with HTML5 &amp; CSS3 only · No JavaScript · No Framework</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

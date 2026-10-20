@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register — LPU Cultural Fest 2026</title>
+  <meta name="description" content="Register for LPU Cultural Fest 2026 — Three Days. One Campus. Endless Expression. Complete your registration for dance, music, dramatics, literary, fine arts, and gaming competitions." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Decorative background blobs -->
+  <div class="bg-blob bg-blob-1" aria-hidden="true"></div>
+  <div class="bg-blob bg-blob-2" aria-hidden="true"></div>
+  <div class="bg-blob bg-blob-3" aria-hidden="true"></div>
+
+  <!-- Nav Toggle (CSS-only hamburger) -->
+  <input type="checkbox" id="nav-toggle" aria-hidden="true" />
+  <header class="site-header" role="banner">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="LPU Cultural Fest 2026 — Home">
+        LPU <span>CULTURAL FEST</span> '26
+      </a>
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="dance.html">Dance</a>
+        <a href="music.html">Music</a>
+        <a href="dramatics.html">Dramatics</a>
+        <a href="literary.html">Literary</a>
+        <a href="finearts.html">Fine Arts</a>
+        <a href="gaming.html">Gaming</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="register.html" class="nav-cta active">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero" aria-labelledby="reg-hero-title">
+      <div class="container page-hero-content">
+        <span class="hero-badge anim-fade-up">✦ Festival Registration</span>
+        <h1 id="reg-hero-title" class="page-hero-title text-gradient anim-fade-up anim-fade-up-d1">
+          Register for LPU Cultural Fest 2026
+        </h1>
+        <p class="page-hero-sub anim-fade-up anim-fade-up-d2">
+          Complete your details below to participate in the celebration of creativity, culture, and campus talent.
+        </p>
+      </div>
+    </section>
+
+    <!-- Registration Section with Side Checklist -->
+    <section class="section-pad" id="registration-section" aria-labelledby="form-heading">
+      <div class="container">
+        <div class="register-wrap">
+          <h2 id="form-heading" class="sr-only">Festival Registration Form and Guidelines</h2>
+
+          <div class="register-layout">
+
+            <!-- Registration Form Area -->
+            <form class="glass-card reg-form" action="#registration-section" method="get" id="registration-form" aria-label="LPU Cultural Fest 2026 Registration Form">
+
+              <!-- PERSONAL INFORMATION -->
+              <span class="form-section-title">Personal Information</span>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="full-name">Full Name <span aria-hidden="true" style="color:var(--clr-pink);">*</span></label>
+                  <input
+                    type="text"
+                    id="full-name"
+                    name="full_name"
+                    placeholder="e.g. Aarav Sharma"
+                    required
+                    minlength="2"
+                    maxlength="60"
+                    autocomplete="name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="reg-number">LPU Registration Number <span aria-hidden="true" style="color:var(--clr-pink);">*</span></label>
+                  <input
+                    type="text"
+                    id="reg-number"
+                    name="reg_number"
+                    placeholder="e.g. 12014892"
+                    required
+                    pattern="[0-9]{8,12}"
+                    title="Enter your 8–12 digit LPU registration number"
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email Address <span aria-hidden="true" style="color:var(--clr-pink);">*</span></label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="student@lpu.in"
+                    required
+                    autocomplete="email"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number <span aria-hidden="true" style="color:var(--clr-pink);">*</span></label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+91 98765 43210"
+                    required
+                    pattern="[+]?[0-9\s\-]{10,15}"
+                    title="Enter a valid phone number (10–15 digits)"
+                    autocomplete="tel"
+                  />
+                </div>
+              </div>
+
+              <hr class="form-divider" />
+
+              <!-- EVENT SELECTION -->
+              <span class="form-section-title">Event Selection</span>
+
+              <div class="form-group">
+                <label for="category">Select Category <span aria-hidden="true" style="color:var(--clr-pink);">*</span></label>
+                <select id="category" name="category" required>
+                  <option value="" disabled selected>Select an arena...</option>
+                  <option value="dance">Dance</option>
+                  <option value="music">Music</option>
+                  <option value="dramatics">Dramatics</option>
+                  <option value="literary">Literary</option>
+                  <option value="finearts">Fine Arts</option>
+                  <option value="gaming">Gaming &amp; Coding</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="event">Select Event <span aria-hidden="true" style="color:var(--clr-pink);">*</span></label>
+                <select id="event" name="event" required>
+                  <option value="" disabled selected>Select an event...</option>
+                  <optgroup label="Dance">
+                    <option value="solo-spotlight">Solo Spotlight</option>
+                    <option value="duo-dynamics">Duo Dynamics</option>
+                    <option value="group-choreography">Group Choreography</option>
+                    <option value="folk-fusion">Folk Fusion</option>
+                    <option value="street-dance">Street Dance Face-Off</option>
+                    <option value="classical-expressions">Classical Expressions</option>
+                  </optgroup>
+                  <optgroup label="Music">
+                    <option value="solo-vocals">Solo Vocals</option>
+                    <option value="acoustic-unplugged">Acoustic Unplugged</option>
+                    <option value="instrumental-jam">Instrumental Jam</option>
+                    <option value="battle-of-bands">Battle of Bands</option>
+                    <option value="rap-beatbox">Rap &amp; Beatbox</option>
+                    <option value="folk-melody">Folk Melody Showcase</option>
+                  </optgroup>
+                  <optgroup label="Dramatics">
+                    <option value="nukkad-natak">Nukkad Natak</option>
+                    <option value="stage-play">Stage Play</option>
+                    <option value="mono-acting">Mono Acting</option>
+                    <option value="mime">Mime Performance</option>
+                    <option value="improv">Improv Arena</option>
+                  </optgroup>
+                  <optgroup label="Literary">
+                    <option value="debate">Debate Championship</option>
+                    <option value="slam-poetry">Slam Poetry</option>
+                    <option value="creative-writing">Creative Writing</option>
+                    <option value="quiz-league">Quiz League</option>
+                    <option value="open-mic">Open Mic</option>
+                  </optgroup>
+                  <optgroup label="Fine Arts">
+                    <option value="live-sketching">Live Sketching</option>
+                    <option value="poster-design">Poster Design</option>
+                    <option value="rangoli">Rangoli</option>
+                    <option value="face-painting">Face Painting</option>
+                    <option value="collage-art">Collage Art</option>
+                    <option value="photography-walk">Photography Walk</option>
+                  </optgroup>
+                  <optgroup label="Gaming &amp; Coding">
+                    <option value="valorant">Valorant Squad Clash</option>
+                    <option value="ea-fc">EA FC Showdown</option>
+                    <option value="mobile-gaming">Mobile Gaming Arena</option>
+                    <option value="frontend-sprint">Frontend Design Sprint</option>
+                    <option value="coding-challenge">Coding Challenge</option>
+                  </optgroup>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Participation Type <span aria-hidden="true" style="color:var(--clr-pink);">*</span></label>
+                <div class="radio-group" role="radiogroup" aria-label="Participation Type">
+                  <label class="radio-option">
+                    <input type="radio" name="participation_type" value="solo" checked /> Solo
+                  </label>
+                  <label class="radio-option">
+                    <input type="radio" name="participation_type" value="team" /> Team
+                  </label>
+                </div>
+              </div>
+
+              <hr class="form-divider" />
+
+              <!-- TEAM INFORMATION -->
+              <span class="form-section-title">Team Information (if applicable)</span>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="team-name">Team Name</label>
+                  <input
+                    type="text"
+                    id="team-name"
+                    name="team_name"
+                    placeholder="e.g. Rhythm Riders (for team events)"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="team-size">Team Size</label>
+                  <input
+                    type="number"
+                    id="team-size"
+                    name="team_size"
+                    min="1"
+                    max="25"
+                    placeholder="Number of members"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="team-members">Team Member Names</label>
+                <textarea
+                  id="team-members"
+                  name="team_members"
+                  placeholder="List full names and registration numbers of all team members, one per line..."
+                  rows="4"
+                ></textarea>
+              </div>
+
+              <hr class="form-divider" />
+
+              <!-- ADDITIONAL INFORMATION -->
+              <span class="form-section-title">Additional Details</span>
+
+              <div class="form-group">
+                <label for="message">Short Message or Requirements (Optional)</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Share any special acoustic requirements, instruments, props, or background information..."
+                  rows="3"
+                ></textarea>
+              </div>
+
+              <!-- Agreement Checkbox -->
+              <div class="form-check">
+                <input type="checkbox" id="agree" name="agree" required />
+                <label for="agree">
+                  I confirm that the information provided is accurate and I agree to follow the festival participation guidelines.
+                </label>
+              </div>
+
+              <!-- Submit Button -->
+              <button
+                type="submit"
+                class="btn btn-submit"
+              >
+                Submit Registration
+              </button>
+
+              <!-- Review note below button -->
+              <p class="form-review-note">
+                Please review your selected event and team details before submitting.
+              </p>
+
+            </form>
+            <!-- end form -->
+
+            <!-- Side Card: Before You Register -->
+            <aside class="glass-card before-register-card" aria-label="Before You Register checklist">
+              <div class="before-register-header">
+                <span class="before-register-badge">✦ Helpful Checklist</span>
+                <h3 class="before-register-title">Before You Register</h3>
+              </div>
+              <p class="before-register-sub">
+                Follow these essential pointers to ensure a smooth, hassle-free festival entry:
+              </p>
+
+              <ul class="before-register-list">
+                <li>
+                  <span class="check-icon" aria-hidden="true">✓</span>
+                  <div>
+                    <strong>Choose your preferred event category</strong>
+                    <p>Explore our creative arenas — Dance, Music, Dramatics, Literary, Fine Arts, and Gaming — to select your stage.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="check-icon" aria-hidden="true">✓</span>
+                  <div>
+                    <strong>Keep your LPU registration number ready</strong>
+                    <p>Have your valid 8–12 digit university registration number on hand for verification.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="check-icon" aria-hidden="true">✓</span>
+                  <div>
+                    <strong>Team captains should enter accurate participant details</strong>
+                    <p>For duo, ensemble, and squad competitions, ensure all member names and sizes are entered correctly.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="check-icon" aria-hidden="true">✓</span>
+                  <div>
+                    <strong>Check the schedule page for event timings</strong>
+                    <p>Review the timeline to verify that your selected events do not conflict across the three days. <a href="schedule.html" class="inline-link">View Festival Schedule &rarr;</a></p>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="before-register-tip">
+                <span class="tip-icon" aria-hidden="true">💡</span>
+                <p>Slot allocations and venue call times will be confirmed based on registration details.</p>
+              </div>
+            </aside>
+
+          </div>
+          <!-- end .register-layout -->
+
+        </div>
+        <!-- end .register-wrap -->
+      </div>
+    </section>
+
+    <!-- Explore More — Arena Cards -->
+    <section class="section-pad--sm" aria-labelledby="arenas-explore-heading">
+      <div class="container text-center">
+        <span class="section-label">Explore Arenas</span>
+        <h2 id="arenas-explore-heading" class="section-title">Not Sure Which Event? <span class="text-gradient">Browse the Arenas</span></h2>
+        <div class="section-divider"></div>
+
+        <div class="arenas-grid" style="margin-top:var(--gap-lg);">
+
+          <a href="dance.html" class="glass-card arena-card" style="text-decoration:none;">
+            <div class="arena-icon" aria-hidden="true">💃</div>
+            <h3 class="arena-name">Dance</h3>
+            <p class="arena-desc">6 events including solo spotlight, duo dynamics, folk fusion, and classical expressions.</p>
+          </a>
+
+          <a href="music.html" class="glass-card arena-card" style="text-decoration:none;">
+            <div class="arena-icon" aria-hidden="true">🎵</div>
+            <h3 class="arena-name">Music</h3>
+            <p class="arena-desc">6 events from solo vocals to battle of bands, acoustic unplugged, and folk melody.</p>
+          </a>
+
+          <a href="dramatics.html" class="glass-card arena-card" style="text-decoration:none;">
+            <div class="arena-icon" aria-hidden="true">🎭</div>
+            <h3 class="arena-name">Dramatics</h3>
+            <p class="arena-desc">5 events including nukkad natak, stage play, mono acting, mime, and improv arena.</p>
+          </a>
+
+          <a href="literary.html" class="glass-card arena-card" style="text-decoration:none;">
+            <div class="arena-icon" aria-hidden="true">📖</div>
+            <h3 class="arena-name">Literary</h3>
+            <p class="arena-desc">5 events featuring parliamentary debate, slam poetry, quiz league, and open mic.</p>
+          </a>
+
+          <a href="finearts.html" class="glass-card arena-card" style="text-decoration:none;">
+            <div class="arena-icon" aria-hidden="true">🎨</div>
+            <h3 class="arena-name">Fine Arts</h3>
+            <p class="arena-desc">6 events including live sketching, poster design, rangoli, photography, and collage art.</p>
+          </a>
+
+          <a href="gaming.html" class="glass-card arena-card" style="text-decoration:none;">
+            <div class="arena-icon" aria-hidden="true">🎮</div>
+            <h3 class="arena-name">Gaming</h3>
+            <p class="arena-desc">5 events including Valorant squad clash, EA FC showdown, and coding challenges.</p>
+          </a>
+
+        </div>
+        <!-- end .arenas-grid -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <h3><span class="text-gradient">LPU Cultural Fest</span> '26</h3>
+          <p>
+            Celebrating the spirit of campus culture, artistic expression, and student talent.
+            Three Days. One Campus. Endless Expression.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Arenas</h4>
+          <ul>
+            <li><a href="dance.html">Dance</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="dramatics.html">Dramatics</a></li>
+            <li><a href="literary.html">Literary</a></li>
+            <li><a href="finearts.html">Fine Arts</a></li>
+            <li><a href="gaming.html">Gaming &amp; Coding</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html#about">About the Fest</a></li>
+            <li><a href="index.html#arenas">Creative Arenas</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-sources">
+        <h4>Festival Inspiration — Official LPU References</h4>
+        <ul>
+          <li>
+            <a href="https://www.lpu.in/campus-life/art-and-culture.php"
+               target="_blank" rel="noopener noreferrer">
+              1. LPU Art &amp; Culture — lpu.in/campus-life/art-and-culture.php
+            </a>
+          </li>
+          <li>
+            <a href="https://happenings.lpu.in/lpus-three-day-mega-cultural-fest-spectra-kick-started-at-the-campus/"
+               target="_blank" rel="noopener noreferrer">
+              2. LPU's Three-Day Mega Cultural Fest Spectra — happenings.lpu.in
+            </a>
+          </li>
+          <li>
+            <a href="https://happenings.lpu.in/magnificent-display-of-indian-culture-at-lpus-annual-one-india-2024-cultural-fest/"
+               target="_blank" rel="noopener noreferrer">
+              3. One India 2024 Cultural Fest — happenings.lpu.in
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 LPU Cultural Fest. All rights reserved.</p>
+        <p>Three Days. One Campus. Endless Expression.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
