@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance Events - Cultural Fest</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background-color: #f4f6f9; color: #333; }
+        header { background-color: #1e293b; color: white; padding: 20px; text-align: center; }
+        nav { background-color: #0f172a; display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; padding: 12px; }
+        nav a { color: white; text-decoration: none; font-weight: bold; padding: 8px 16px; border-radius: 5px; }
+        nav a:hover, nav a.active { background-color: #38bdf8; color: #0f172a; }
+        
+        main { width: 80%; margin: 30px auto; }
+        .event-detail { background-color: white; padding: 25px; border-radius: 10px; margin-bottom: 25px; border-left: 5px solid #2563eb; box-shadow: 0 3px 6px rgba(0,0,0,0.1); }
+        .event-detail h2 { color: #1e293b; margin-bottom: 10px; }
+        ul { margin-left: 20px; margin-top: 10px; line-height: 1.8; }
+        .btn { display: inline-block; background-color: #2563eb; color: white; padding: 8px 16px; text-decoration: none; border-radius: 5px; margin-top: 15px; font-weight: bold; }
+        footer { background-color: #1e293b; color: white; text-align: center; padding: 15px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Dance Competitions</h1>
+        <p>Showcase your rhythm & win amazing prizes!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dance.html" class="active">Dance</a>
+        <a href="music.html">Music</a>
+        <a href="dramatics.html">Dramatics</a>
+        <a href="literary.html">Literary</a>
+        <a href="finearts.html">Fine Arts</a>
+        <a href="gaming.html">Gaming</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="register.html">Register Now</a>
+    </nav>
+
+    <main>
+        <div class="event-detail">
+            <h2>1. Solo Dance Challenge</h2>
+            <p><strong>Team Size:</strong> Individual (1 Member)</p>
+            <p><strong>Prize Money:</strong> ₹10,000</p>
+            <p><strong>Venue:</strong> Main Auditorium (Stage A)</p>
+            <p><strong>Rulebook:</strong></p>
+            <ul>
+                <li>Time Limit: 3 to 5 minutes.</li>
+                <li>Track must be submitted 2 hours before event in MP3 format.</li>
+                <li>Props are permitted with prior confirmation.</li>
+            </ul>
+            <a href="register.html" class="btn">Register for Solo Dance</a>
+        </div>
+
+        <div class="event-detail">
+            <h2>2. Group Street Dance Battle</h2>
+            <p><strong>Team Size:</strong> 6 to 12 Members</p>
+            <p><strong>Prize Money:</strong> ₹25,000</p>
+            <p><strong>Venue:</strong> Open Air Theater (Stage B)</p>
+            <p><strong>Rulebook:</strong></p>
+            <ul>
+                <li>Time Limit: 8 to 10 minutes.</li>
+                <li>Styles allowed: Hip-Hop, Urban, Krump, Popping.</li>
+            </ul>
+            <a href="register.html" class="btn">Register for Group Dance</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Cultural Fest Registration Desk</p>
+    </footer>
+
+</body>
+</html>
